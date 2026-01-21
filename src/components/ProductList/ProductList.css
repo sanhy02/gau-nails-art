@@ -1,0 +1,136 @@
+.product-cart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.card {
+  width: 260px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 992px) {
+  .body-page-container {
+    flex-direction: column;
+  }
+
+  .body-page-content-1 img,
+  .body-page-img-1,
+  .body-page-img-2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .page-banner {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 30px;
+    text-align: center;
+  }
+}
+.product-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 40px 0;
+}
+
+.product-cart {
+  display: flex;
+  gap: 24px;
+  overflow: hidden;
+}
+
+.card {
+  width: 18rem;
+}
+
+/* ===== ARROW BUTTON ===== */
+.arrow {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  background: linear-gradient(135deg, #f7b7c8, #d88aa6);
+  color: #fff;
+
+  cursor: pointer;
+
+  box-shadow: 
+    0 8px 20px rgba(216, 138, 166, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+
+  transition: all 0.35s ease;
+}
+
+/* Hover nổi + sáng */
+.arrow:hover {
+  transform: translateY(-3px) scale(1.08);
+  box-shadow:
+    0 12px 28px rgba(216, 138, 166, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+/* Active (bấm xuống) */
+.arrow:active {
+  transform: scale(0.95);
+}
+
+/* ===== POSITION OPTION (nếu muốn đè lên card) ===== */
+.product-wrapper {
+  position: relative;
+}
+
+.arrow.left {
+  margin-right: 8px;
+}
+
+.arrow.right {
+  margin-left: 8px;
+}
+/* ===== PRODUCT IMAGE FIX ===== */
+.card-img-top {
+  width: 100%;
+  height: 180px;           /* CHIỀU CAO CỐ ĐỊNH */
+  object-fit: cover;       /* CẮT ẢNH CHO ĐỀU */
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+/* Đảm bảo card đều chiều cao */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Giữ nút luôn nằm dưới */
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body button {
+  margin-top: auto;
+}

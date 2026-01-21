@@ -1,0 +1,39 @@
+.page-banner {
+  margin: 60px auto;
+  max-width: 1200px;
+  height: 110px;
+  background: linear-gradient(135deg, #f7b7c8, #e89cb4);
+  border-radius: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+
+  color: white;
+}
+
+.page-banner h1 {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Button book */
+.page-banner button {
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: #fff;
+  color: #d88aa6;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page-banner button:hover {
+  background-color: #fdf1f5;
+  transform: translateY(-2px);
+}

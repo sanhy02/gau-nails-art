@@ -1,0 +1,91 @@
+.footer {
+  background: linear-gradient(135deg, #fdf1f5, #fff);
+  padding: 60px 0 20px;
+  margin-top: 80px;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.footer-col p {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #d88aa6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-logo {
+  margin-top: 12px;
+  width: 100px;
+}
+
+/* Thanh toán */
+.footer-payments {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-payments img {
+  width: 48px;
+  height: auto;
+  background: #fff;
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Link chính sách */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-links li:hover {
+  color: #d88aa6;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid #f1c6d4;
+  font-size: 13px;
+  color: #888;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}

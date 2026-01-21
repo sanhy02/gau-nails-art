@@ -1,0 +1,53 @@
+/* Body Page */
+.body-page-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* Hình lớn bên trái */
+.body-page-content-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* CHỐT HẠ */
+  border-radius: 24px;
+  display: block;
+}
+
+/* Cột phải */
+.body-page-content-2 {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  gap: 20px;
+}
+
+.body-page-content-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+}
+img {
+  vertical-align: middle;
+}
+
+.body-page-img-1,
+.body-page-img-2 {
+  height: 560px;
+}
+
+/* Hover sang */
+.body-page-container img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.body-page-container img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
