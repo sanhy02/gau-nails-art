@@ -8,7 +8,7 @@ function Navbar({ logo }) {
       </div>
 
       <div className="nav-center">
-        <p className="nav-bar-title">Bích Ngọc Nails</p>
+        <p className="nav-bar-title">Gấu Nails Art</p>
       </div>
 
       <div className="nav-right">

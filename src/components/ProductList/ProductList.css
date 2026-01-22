@@ -109,10 +109,14 @@
 .arrow.right {
   margin-left: 8px;
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .arrow {
     width: 48px;
     height: 48px;
+  }
+  .arrow.left,
+  .arrow.right {
+    display: none;
   }
 }
 
@@ -140,4 +144,32 @@
 
 .card-body button {
   margin-top: auto;
+}
+/* ===== NÚT XEM TẤT CẢ ===== */
+.view-all-wrapper {
+  display: none; /* mặc định: desktop ẨN */
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .view-all-wrapper {
+    display: flex;           /* hiện trên mobile */
+    justify-content: center; /* căn giữa ngang */
+    align-items: center;
+  }
+
+  .view-all-btn {
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  /* Ẩn mũi tên trên mobile */
+  .arrow.left,
+  .arrow.right {
+    display: none;
+  }
 }
