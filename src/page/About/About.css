@@ -1,1 +1,72 @@
+.about-page {
+  font-family: 'Helvetica Neue', sans-serif;
+}
 
+/* HERO */
+.about-hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.about-hero img {
+  max-width: 360px;
+  margin-bottom: 40px;
+}
+
+.about-hero h1 {
+  letter-spacing: 4px;
+  font-size: 28px;
+}
+
+/* QUOTE */
+.about-quote {
+  text-align: center;
+  padding: 120px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.about-quote p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.about-quote span {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+/* DARK SECTION */
+.about-story.dark {
+  background: #111;
+  color: #fff;
+  padding: 140px 20px;
+  text-align: center;
+}
+
+.about-story h2 {
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.about-story p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* GALLERY */
+.about-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 120px 20px;
+}
+
+.about-gallery img {
+  width: 260px;
+  object-fit: cover;
+}

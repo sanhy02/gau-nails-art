@@ -7,23 +7,27 @@ function ProductList({ products }) {
   const [visibleCount, setVisibleCount] = useState(4)
 
   const handlePrev = () => {
-    if (startIndex + visibleCount < products.length) {
-      setStartIndex(startIndex + 1)
+    if (startIndex > 0) {
+      setStartIndex(prev => prev - 1)
     }
   }
 
   const handleNext = () => {
-    if (startIndex > 0) {
-      setStartIndex(startIndex - 1)
+    if (startIndex + visibleCount < products.length) {
+      setStartIndex(prev => prev + 1)
     }
   }
+
   const handleShowMore = () => {
     setVisibleCount(prev =>
       Math.min(prev + STEP, products.length)
     )
   }
 
-  const visibleProduct = products.slice(0, visibleCount)
+  const visibleProduct = products.slice(
+    startIndex,
+    startIndex + visibleCount
+  )
 
   return (
     <>
@@ -38,7 +42,6 @@ function ProductList({ products }) {
               <div className="card-body">
                 <h5>{item.title}</h5>
                 <p>{item.desc}</p>
-                <button className="btn btn-primary">Xem chi tiết</button>
               </div>
             </div>
           ))}

@@ -1,27 +1,26 @@
-import logo from './assets/logo.png'
-import pageBody1 from './assets/mong1.jpg'
-import pageBody2 from './assets/mong2.jpg'
-import pageBody3 from './assets/mong3.jpg'
 import './index.css'
-import Navbar from './components/navbar/Navbar.jsx'
-import Hero from './components/Hero/Hero.jsx'
-import ProductList from './components/ProductList/ProductList.jsx'
-import Footer from './components/Footer/Footer.jsx'
-import Banner from './components/Banner/Banner.jsx'
-import { products } from './data/products.js'
+import { Routes, Route } from 'react-router-dom'
+import MainLayout from './layout/MainLayout.jsx'
+import Products from './page/Products/Products.jsx'
+import Home from './page/Home/Home.jsx'
+import About from './page/About/About.jsx'
+import Contact from './page/Contact/Contact.jsx'
+import BookNow from './page/BookNow/BookNow.jsx'
 
 
 function App() {
 
   return (
     <>
-      <Navbar logo={logo} />
-      <Hero img1={pageBody1} img2={pageBody2} img3={pageBody3} />
-      <Banner title="Get Your Nails Done Today!" buttonText="Book Now" />
-      <ProductList products={products} />
-      <Banner title="Get Your Nails Done Today!" buttonText="Book Now" />
-      <ProductList products={[...products].reverse()} />
-      <Footer />
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/book-now" element={<BookNow />} />
+        </Routes>
+    </MainLayout>
     </>
   )
 }
