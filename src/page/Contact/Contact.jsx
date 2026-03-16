@@ -5,38 +5,38 @@ const Contact = () => {
     <main className="contact-page">
       {/* HERO */}
       <section className="contact-hero">
-        <h1>CONTACT</h1>
+        <h1>LIÊN HỆ</h1>
         <p>Gau Nails Art – Luxury Nail Studio</p>
       </section>
 
       {/* INFO */}
       <section className="contact-info">
         <div className="info-item">
-          <h3>Address</h3>
+          <h3>ĐỊA CHỈ</h3>
           <p>123 Nguyen Trai, District 1, Ho Chi Minh City</p>
         </div>
 
         <div className="info-item">
-          <h3>Phone</h3>
+          <h3>ĐIỆN THOẠI</h3>
           <p>0855 654 656</p>
         </div>
 
         <div className="info-item">
-          <h3>Email</h3>
+          <h3>EMAIL</h3>
           <p>gaunailsart@gmail.com</p>
         </div>
       </section>
 
       {/* FORM */}
       <section className="contact-form">
-        <h2>Send us a message</h2>
+        <h2>Gửi cho chúng tôi một tin nhắn</h2>
 
         <form>
-          <input type="text" placeholder="Your name" />
-          <input type="email" placeholder="Your email" />
-          <textarea placeholder="Your message" rows="5"></textarea>
+          <input type="text" placeholder="Tên của bạn" />
+          <input type="email" placeholder="Email của bạn" />
+          <textarea placeholder="Tin nhắn của bạn" rows="5"></textarea>
 
-          <button type="submit">Send Message</button>
+          <button type="submit">Gửi Tin Nhắn</button>
         </form>
       </section>
     </main>

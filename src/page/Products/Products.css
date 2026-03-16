@@ -28,11 +28,39 @@
   max-width: 1200px;
   margin: 0 auto 120px;
   padding: 0 20px;
+}
 
+.products-group {
+  margin-bottom: 56px;
+}
+
+.group-title {
+  font-size: 22px;
+  color: #d88aa6;
+  margin: 8px 0 20px;
+  font-weight: 600;
+}
+
+.group-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
+
+/* Load more button */
+.load-more-btn {
+  display: inline-block;
+  background: #d88aa6;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.12s ease;
+}
+
+.load-more-btn:hover { background: #c77393; transform: translateY(-2px); }
 
 /* CARD */
 .product-card {

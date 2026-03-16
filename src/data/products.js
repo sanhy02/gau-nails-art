@@ -18,84 +18,98 @@ export const products = [
     "id": 1,
     "image": product1,
     "title": "Nail Design Basic",
-    "desc": "Dịch vụ chăm sóc và tạo kiểu móng cơ bản"
+    "desc": "Dịch vụ chăm sóc và tạo kiểu móng cơ bản",
+    "category": "tay"
   },
   {
     "id": 2,
     "image": product2,
     "title": "Nail Art Premium",
-    "desc": "Thiết kế nail nghệ thuật cao cấp"
+    "desc": "Thiết kế nail nghệ thuật cao cấp",
+    "category": "tay"
   },
   {
     "id": 3,
     "image": product3,
     "title": "Nail Care",
-    "desc": "Chăm sóc móng – phục hồi móng yếu"
+    "desc": "Chăm sóc móng – phục hồi móng yếu",
+    "category": "tay"
   },
   {
     "id": 4,
     "image": product4,
     "title": "Combo Nails",
-    "desc": "Combo tiết kiệm cho khách hàng thân thiết"
+    "desc": "Combo tiết kiệm cho khách hàng thân thiết",
+    "category": "tay"
   },
   {
     "id": 5,
     "image": product5,
     "title": "Nail Gel Color",
-    "desc": "Sơn gel bền màu – bóng đẹp"
+    "desc": "Sơn gel bền màu – bóng đẹp",
+    "category": "tay"
   },
   {
     "id": 6,
     "image": product6,
     "title": "French Nails",
-    "desc": "Phong cách nail Pháp tinh tế"
+    "desc": "Phong cách nail Pháp tinh tế",
+    "category": "tay"
   },
   {
     "id": 7,
     "image": product7,
     "title": "Luxury Stone Nails",
-    "desc": "Đính đá sang trọng – nổi bật"
+    "desc": "Đính đá sang trọng – nổi bật",
+    "category": "tay"
   },
   {
     "id": 8,
     "image": product8,
     "title": "Ombre Nails",
-    "desc": "Hiệu ứng chuyển màu nhẹ nhàng"
+    "desc": "Hiệu ứng chuyển màu nhẹ nhàng",
+    "category": "tay"
   },
   {
     "id": 9,
     "image": product9,
     "title": "Cute Style Nails",
-    "desc": "Phong cách dễ thương – trẻ trung"
+    "desc": "Phong cách dễ thương – trẻ trung",
+    "category": "tay"
   },
   {
     "id": 10,
     "image": product10,
     "title": "Wedding Nails",
-    "desc": "Thiết kế nail cô dâu sang trọng"
+    "desc": "Thiết kế nail cô dâu sang trọng",
+    "category": "tay"
   },
   {
     "id": 11,
     "image": product11,
     "title": "Minimal Nails",
-    "desc": "Phong cách tối giản – tinh tế"
+    "desc": "Phong cách tối giản – tinh tế",
+    "category": "tay"
   },
   {
     "id": 12,
     "image": product12,
     "title": "Seasonal Nails",
-    "desc": "Thiết kế nail theo mùa"
+    "desc": "Thiết kế nail theo mùa",
+    "category": "tay"
   },
   {
     "id": 13,
     "image": product13,
     "title": "Glossy Nails",
-    "desc": "Nail bóng gương hiện đại"
+    "desc": "Nail bóng gương hiện đại",
+    "category": "chan"
   },
   {
     "id": 14,
     "image": product14,
     "title": "Art Line Nails",
-    "desc": "Nail vẽ line nghệ thuật"
+    "desc": "Nail vẽ line nghệ thuật",
+    "category": "tay"
   }
 ]
