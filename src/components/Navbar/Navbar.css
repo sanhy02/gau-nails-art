@@ -1,11 +1,11 @@
 .nav-bar {
   width: 100%;
-  height: 90px;
+  height: 64px;
   background: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 20px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -14,7 +14,7 @@
 
 /* LOGO */
 .nav-left img {
-  width: 140px;
+  width: 110px;
   object-fit: contain;
 }
 
@@ -36,15 +36,15 @@
 }
 
 .nav-bar p {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .nav-bar-title {
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 
   /* Màu gradient sang chảnh */
@@ -53,7 +53,7 @@
   -webkit-text-fill-color: transparent;
 
   cursor: pointer;
-  transition: all 0.35s ease;
+  transition: all 0.28s ease;
   position: relative;
 }
 
@@ -86,13 +86,13 @@
 }
 
 .nav-search input {
-  width: 200px;
-  padding: 8px 14px;
-  border-radius: 20px;
+  width: 160px;
+  padding: 6px 12px;
+  border-radius: 18px;
   border: 1px solid #f2c2d1;
   outline: none;
-  font-size: 14px;
-  transition: all 0.3s ease;
+  font-size: 13px;
+  transition: all 0.25s ease;
 }
 
 .nav-search input::placeholder {
@@ -106,15 +106,15 @@
 
 /* Button search gradient */
 .nav-search button {
-  padding: 8px 18px;
-  border-radius: 20px;
+  padding: 6px 14px;
+  border-radius: 18px;
   border: none;
   background: linear-gradient(135deg, #f7b7c8, #d88aa6);
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .nav-search button:hover {
@@ -125,21 +125,21 @@
 /* ===== MENU ===== */
 .nav-item-menu {
   display: flex;
-  justify-content: space-between; /* hoặc space-around */
+  justify-content: flex-end;
   align-items: center;
-  gap: 40px; /* optional */
+  gap: 20px;
   list-style: none;
   margin: 0;
-  padding: 40px;
+  padding: 0;
 }
 
 .nav-item-menu li {
   position: relative;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
   color: #444;
-  transition: color 0.3s ease;
+  transition: color 0.25s ease;
 }
 
 /* underline animation */
@@ -166,8 +166,8 @@
   .nav-bar {
     height: auto;
     flex-wrap: wrap;
-    gap: 12px;
-    padding: 12px 20px;
+    gap: 8px;
+    padding: 10px 16px;
   }
 
   .nav-center {
@@ -183,7 +183,7 @@
   }
 
   .nav-search input {
-    width: 120px;
+    width: 110px;
   }
   .nav-left img {
     display: none;
@@ -201,8 +201,17 @@
     letter-spacing: 1px;
   }
 
-  .nav-item-menu ul {
-    gap: 14px;
+  /* Make nav links centered and evenly spaced on small screens */
+  .nav-item-menu {
+    width: 100%;
+    justify-content: space-around;
+    padding: 6px 0;
+  }
+
+  .nav-item-menu .nav-link {
+    flex: 1;
+    text-align: center;
+    padding: 6px 8px;
   }
 }
 
