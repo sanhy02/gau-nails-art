@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import './Navbar.css'
 
 function Navbar({ logo }) {
@@ -7,6 +7,34 @@ function Navbar({ logo }) {
   const [keyword, setKeyword] = useState('')
   // Hook dùng để chuyển trang
   const navigate = useNavigate()
+  const location = useLocation()
+  const lastScroll = useRef(0)
+
+  useEffect(() => {
+    const mobileBreakpoint = 992
+    // only apply on mobile and for specific paths
+    const allowedPaths = ['/', '/products', '/contact', '/book-now']
+    if (window.innerWidth > mobileBreakpoint) return
+    if (!allowedPaths.includes(location.pathname)) return
+
+    const handler = () => {
+      const current = window.scrollY || window.pageYOffset
+      const nav = document.querySelector('.nav-bar')
+      if (!nav) return
+
+      if (current > lastScroll.current && current > 50) {
+        // scrolling down -> hide
+        nav.classList.add('nav-hidden')
+      } else {
+        // scrolling up -> show
+        nav.classList.remove('nav-hidden')
+      }
+      lastScroll.current = current
+    }
+
+    window.addEventListener('scroll', handler, { passive: true })
+    return () => window.removeEventListener('scroll', handler)
+  }, [location.pathname])
   // Hàm xử lý khi click Search hoặc nhấn Enter
   const handleSearch = () => {
     // Nếu keyword rỗng hoặc chỉ có khoảng trắng thì không làm gì

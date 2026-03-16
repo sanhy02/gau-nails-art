@@ -9,6 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: transform 0.28s ease, opacity 0.28s ease;
 }
 
 /* LOGO */
@@ -203,4 +204,11 @@
   .nav-item-menu ul {
     gap: 14px;
   }
+}
+
+/* Hidden state when scrolling down on mobile */
+.nav-hidden {
+  transform: translateY(-110%);
+  opacity: 0;
+  pointer-events: none;
 }
